@@ -1,4 +1,4 @@
-from auth_token import auth_token
+from .auth_token import auth_token
 from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
 # import torch
@@ -57,3 +57,7 @@ def generate_image(prompt:str):
     # image = response_json.output[0]
     # print(image)
     return response_json
+
+@app.get("/hello")
+def hello_world():
+    return "Hello world"
