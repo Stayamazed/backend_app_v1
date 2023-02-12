@@ -1,6 +1,9 @@
 from .auth_token import auth_token
 from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
+import requests
+import json
+
 # import torch
 # from torch import autocast
 # from diffusers import StableDiffusionPipeline
